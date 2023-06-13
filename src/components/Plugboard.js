@@ -25,4 +25,5 @@ export const plugBoard = {
   x: 24,
   y: 25,
   z: 23,
+  
 };
