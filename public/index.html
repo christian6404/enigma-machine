@@ -40,4 +40,27 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <head>
+    <title>Enigma Machine Keyboard</title>
+    <script src="enigma.js"></script>
+  </head>
+  <body>
+    <h1>Enigma Machine Keyboard</h1>
+    <label for="input">Input Letter:</label>
+    <input type="text" id="input" />
+    <button onclick="encryptLetter()">Encrypt</button>
+    <p id="output"></p>
+  
+    <script>
+      function encryptLetter() {
+        const inputElement = document.getElementById('input');
+        const outputElement = document.getElementById('output');
+  
+        const inputLetter = inputElement.value;
+        const encryptedLetter = encrypt(inputLetter);
+  
+        outputElement.textContent = `Encrypted Letter: ${encryptedLetter}`;
+      }
+    </script>
+  </body>
 </html>
