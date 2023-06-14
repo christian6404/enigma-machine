@@ -83,7 +83,7 @@ function Home() {
         </div>
 
         <label htmlFor="inputBox">Enter your text:</label>
-        <input type="text" id="inputBox" name="inputBox" />
+        <input type="text" id="inputBox" name="inputBox" autoFocus />
         <input type="submit" value="Submit" />
 
         <EnigmaOutput />
